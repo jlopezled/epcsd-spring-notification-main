@@ -30,7 +30,7 @@ public class UserService {
         log.trace("Retrieving users with favourite category '" + category.getName() + "'");
 
         List<User> userList = new LinkedList<User>();
-
+        userList.add(new User(1L, "Jeronimo","", "jlopezled@uoc.edu"));
         for (int i = 0; i < random.nextInt(3) + 1; i++) {
             userList.add(userGenerator.get());
         }
